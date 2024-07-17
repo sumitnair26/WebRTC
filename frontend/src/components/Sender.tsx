@@ -60,7 +60,7 @@ export const Sender = () => {
         video.play();  */
         (async () => {
             try {
-                const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
         
                 // Assuming pc is a previously created RTCPeerConnection
                 pc.addTrack(stream.getVideoTracks()[0]);
